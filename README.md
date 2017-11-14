@@ -6,20 +6,20 @@ The jquery number.js plugin converts the normal `input[type="number"]` into a si
 
 ### How to use it:
 
-#### 1. To use this plugin, makes sure you first have jQuery library loaded in the document.
+1. To use this plugin, makes sure you first have jQuery library loaded in the document.
 
 ```html
 <script src="//code.jquery.com/jquery.min.js"></script>
 ```
 
-#### 2. Load the jquery number.js plugin's script and stylesheet in the document.
+2. Load the jquery number.js plugin's script and stylesheet in the document.
 
 ```html
 	<link rel="stylesheet" href="number.css">
 	<script src="number.js"></script>
 ```
 
-#### 3. Create a normal number input. The plugin supports the native attribute values just like 'step', 'max', 'min', etc.
+3. Create a normal number input. The plugin supports the native attribute values just like 'step', 'max', 'min', etc.
 
 ```html
 	<p>value="5" step="1" min="0" max="10"</p>
@@ -32,7 +32,7 @@ The jquery number.js plugin converts the normal `input[type="number"]` into a si
 	<input type="number" value="1">
 ```
 
-#### 4. Activate the plugin and you're done.
+4. Activate the plugin and you're done.
 
 ```js
 	$('input').each(function () {
@@ -40,7 +40,7 @@ The jquery number.js plugin converts the normal `input[type="number"]` into a si
 	});
 ```
 
-#### 5. All default configuration options.
+5. All default configuration options.
 
 ```js
 	$('input').number({
