@@ -1,5 +1,6 @@
 # Custom-number
-Jquery plugin with custom input type="number".
+Jquery plugin with custom input type="number". 
+Fork of [Custom-number](https://github.com/AlexandrKrymov/Custom-number) by [Alexander Krymov](https://github.com/AlexandrKrymov)
 
 The jquery number.js plugin converts the normal `input[type="number"]` into a simple input spinner where the users are able to use the plus/minus buttons to increment/decrement the number values.
 
