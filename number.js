@@ -32,6 +32,13 @@
 
         var max = input.attr('max');
 
+				var events = function() {
+
+						input.change();
+						input.trigger('input');
+
+				}
+
         if(input.attr('step')){
 
             var step = +input.attr('step');
@@ -64,6 +71,8 @@
 
                 input.val(+value - step);
 
+								events();
+
                 if(+input.val() === +min){
 
                     input.prev('.' + options.minus).addClass('disabled');
@@ -75,10 +84,13 @@
                     input.next('.' + options.plus).removeClass('disabled')
 
                 }
+								input.trigger
 
             } else if(!min){
 
                 input.val(+value - step);
+
+								events();
 
             }
 
@@ -93,6 +105,8 @@
             if(+value < +max){
 
                 input.val(+value + step);
+
+								events();
 
                 if(+input.val() === +max){
 
@@ -109,6 +123,8 @@
             } else if(!max){
 
                 input.val(+value + step);
+
+								events();
 
             }
 
